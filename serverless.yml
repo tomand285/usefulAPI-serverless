@@ -1,55 +1,36 @@
-# Welcome to Serverless!
+############################################################
+# SERVERLESS CONFIGURATION FOR usefulapi-serverless
 #
-# This file is the main config file for your service.
-# It's very minimal at this point and uses default values.
-# You can always add more config options for more control.
-# We've included some commented out config examples here.
-# Just uncomment any of them to get that config option.
+# Description:
+#   Creates AWS lambda functions and associated AWS resources
+#   for the "usefulapi-serverless" service
 #
-# For full config options, check the docs:
-#    docs.serverless.com
+# Documentation Reference
+#   - https://serverless.com/framework/docs/providers/aws/
+#   - https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
 #
-# Happy Coding!
+# AWS Resources Used:
+#   - API Gateway (Service Endpoint)
+#   - Lambda (Business Logic)
 
 service: usefulapi-serverless
 app: usefulapi-serverless
 org: tomand285
 
-# You can pin your service to only deploy with a specific Serverless version
-# Check out our docs for more details
-# frameworkVersion: "=X.X.X"
-
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
 
-# you can overwrite defaults here
-  stage: dev
-  region: us-east-1
-
-# you can define service wide environment variables here
-#  environment:
-#    variable1: value1
-
-# you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
-#  exclude:
-#    - exclude-me.js
-#    - exclude-me-dir/**
+  apiGateway:
+    binaryMediaTypes:
+      - 'multipart/form-data'
 
 functions:
-  hello:
+  convert:
     handler: src/convert/index.handler
     events:
       - http:
           path: convert
           method: post
-#      - websocket: $connect
-#      - s3: ${env:BUCKET}
-
-#    Define function environment variables here
-#    environment:
-#      variable2: value2
