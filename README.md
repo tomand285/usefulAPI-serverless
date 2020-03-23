@@ -4,7 +4,7 @@ Creates AWS lambda functions and associated AWS resources for the "usefulapi-ser
 
 ### What is this repository for? ###
 
-To house all of my one-off API ideas.
+To house all of my one-off API ideas. This is the serverless verison of this API.
 
 ### How do I get set up? ###
 
