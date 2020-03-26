@@ -13,10 +13,12 @@ To house all of my one-off API ideas. This is the serverless version of this API
 ```
 serverless install --url https://github.com/tomand285/usefulAPI-serverless
 ```
-* Go into the new dir and run:
-``
+```
+cd usefulAPI-serverless
+```
+```
 sls deploy
-``
+```
 
 ### Services ###
 * convert:
