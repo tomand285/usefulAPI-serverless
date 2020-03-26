@@ -9,7 +9,7 @@ To house all of my one-off API ideas. This is the serverless version of this API
 ### How do I get set up? ###
 
 * Follow [this guide](https://serverless.com/framework/docs/getting-started/) to get the initial Serverless Framework set up.
-* Run the following command:
+* Run the following commands:
 ```
 serverless install --url https://github.com/tomand285/usefulAPI-serverless
 ```
