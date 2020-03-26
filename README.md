@@ -19,7 +19,8 @@ cd usefulAPI-serverless
 ```
 sls deploy
 ```
-
+### Architecture Diagram ###
+![Diagram of Useful API](/img/Useful-serverless.png)
 ### Services ###
 * convert:
     * Converts an Image to Base64
