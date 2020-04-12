@@ -11,6 +11,9 @@ To house all of my one-off API ideas. This is the serverless version of this API
 * Follow [this guide](https://serverless.com/framework/docs/getting-started/) to get the initial Serverless Framework set up.
 * Run the following commands:
 ```
+npm install -g serverless
+```
+```
 serverless install --url https://github.com/tomand285/usefulAPI-serverless
 ```
 ```
