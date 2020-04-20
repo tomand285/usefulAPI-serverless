@@ -1,0 +1,25 @@
+{
+  "name": "usefulapi_serverless",
+  "version": "1.0.0",
+  "description": "This API provides many different useful resources. This is the serverless version of this API.",
+  "scripts": {
+    "test": "mocha",
+    "api": "mocha test/integration --timeout 10*1000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomand285/usefulAPI-serverless.git"
+  },
+  "keywords": [],
+  "author": "Andrew Tomko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomand285/usefulAPI-serverless/issues"
+  },
+  "homepage": "https://github.com/tomand285/usefulAPI-serverless#readme",
+  "dependencies": {
+    "mocha": "^7.1.1",
+    "axios": "^0.19.2",
+    "form-data": "^3.0.0"
+  }
+}

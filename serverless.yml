@@ -29,7 +29,7 @@ provider:
 
 functions:
   convert:
-    handler: src/convert/index.handler
+    handler: src/convert/lambda.handler
     events:
       - http:
           path: convert
